@@ -12,16 +12,16 @@ export default function Menu(){
             </div>
             <h1>Menu!</h1>
             <nav>
-                <ul>
-                    <Link href="/">
+                <ul className={styles.link}>
+                    <Link href="/" >
                         <li>Home</li>
                     </Link>
                     <Link href="/registro">
                         <li>Registrar</li>
-                    </Link>
-                    <Link href="ead.ifms.edu.br">
-                        <Image width={150} height={100} src={"https://ead.ifms.edu.br/theme/moove/pix/default_course.jpg"}/>
-                    </Link>    
+                    </Link> 
+                    <Link href="/localizacao" >
+                        <li>Localização</li>
+                    </Link> 
                 </ul>
             </nav>
         </header>
