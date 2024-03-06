@@ -1,6 +1,7 @@
 import styless from "./not-found.modules.css";
 import styles from "./componentes/menu.module.css";
 import Image from "next/image";
+import style from "./componentes/footer.module.css";
 
 export default function notFound(){
     return (
