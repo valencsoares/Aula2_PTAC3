@@ -1,9 +1,11 @@
+import style from "./footer.module.css";
+
 export default function Footer(){
     return (
-        <footer>
-            <div style={{marginTop: 150}}>
-                <ul>
-                    <li>rodapé</li>
+        <footer className={style.rodape}>
+            <div>
+                <ul className={style.text}>
+                    <li>Todos os direitos reservados.</li>
                 </ul>
             </div>
         </footer>
