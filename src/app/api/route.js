@@ -4,12 +4,12 @@ const campus = [
     {
       id:1,
       nome_campi: "Campus Nova Andradina",
-      imagem_url: "https://cdn2.novanews.com.br//uploads/rails_admin_content_builder/content_builder_image/image/32556/center_center_19"
+      imagem_url: "https://www.ifms.edu.br/campi/campus-nova-andradina/informacoes/moradia-estudantil/galeria-de-fotos/moradia-estudantil-1.png/@@images/image"
     },
     {
       id:2,
       nome_campi: "Campus Campo Grande",
-      imagem_url: "https://www.ifms.edu.br/imagens/imagens-noticias/abraco-pela-educacao/img_5497.jpg"
+      imagem_url: "https://cdn6.campograndenews.com.br/uploads/noticias/2023/12/26/3akbzh8vnwys8.jpg"
     }
 ];
 
