@@ -1,4 +1,5 @@
-import style from "./page.module.css"
+import style from "./page.module.css";
+import Image from "next/image";
 
 export default async function Home() {
   const resposta = await fetch("http://localhost:3000/api", { next: { revalidate: 1 } }); //ele esta revalidando o site a cada 1 segundo, se não houver, ele não vai renderizar o site quando mudar algo pq ele está salvo com o cache antigo
@@ -7,10 +8,13 @@ export default async function Home() {
 
   return (
     <main style={{ marginTop: "10%" }}>
-      {campus.map((campi) =>
-        <div className={style.card}>
-          <p>{campi.nome_campi}</p>
-        </div>)}
+      <div className={style.container}>
+        {campus.map((campi) =>
+          <div className={style.card}>
+            <Image width={400} height={300} src={campi.imagem_url} />
+            <p>{campi.nome_campi}</p>
+          </div>)}
+      </div>
     </main>
   )
 }
